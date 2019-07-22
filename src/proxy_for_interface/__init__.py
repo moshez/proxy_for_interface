@@ -56,9 +56,9 @@ def generate_proxy(cls):
     for attribute in attr.fields(cls):
         if proxy_for not in attribute.metadata:
             continue
-        iface = attribute.metadata[proxy_for]
-        attr_name = attribute.name
-        forward_for_interface(cls, attr_name, iface)
+        for iface in attribute.metadata[proxy_for]:
+            attr_name = attribute.name
+            forward_for_interface(cls, attr_name, iface)
     return cls
 
 __all__ = [

@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="proxy_forward",
+    name="proxy_for_interface",
     use_incremental=True,
     description="Automatically proxy interface methods",
     long_description=(
@@ -9,8 +9,8 @@ setuptools.setup(
     ),
     author="Moshe Zadka",
     author_email="moshez@zadka.club",
-    url="https://github.com/moshez/proxy_forward/",
-    packages=["proxy_forward"],
+    url="https://github.com/moshez/proxy_for_interface/",
+    packages=["proxy_for_interface"],
     package_dir={"": "src"},
     setup_requires=[
         'incremental',
